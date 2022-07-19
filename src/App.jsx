@@ -1,13 +1,16 @@
 // import { useState } from 'react'
-import './App.css'
+import { Outlet } from "react-router-dom";
+import "./App.css";
+
+import NavBar from "./components/Navbar";
 
 function App() {
-
-  return (
-    <div className="App">
-      <h1>Movies Flix</h1>
-    </div>
-  )
+   return (
+      <div className="App">
+         <NavBar />
+         <Outlet />
+      </div>
+   );
 }
 
-export default App
+export default App;
